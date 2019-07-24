@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
+	<class name="Alumnos" table="alumnos">
+		<id name="id_alumno" column="id_alumno"/>
+<!-- 			<generator class="native" /> -->
+<!-- 		</id> -->
+		<property name="nombres" type="string" column="nombres"/>
+		<property name="apellido_pat" type="string" column="apellido_pat"/>
+		<property name="apellido_mat" type="string" column="apellido_mat"/>
+		<property name="fecha_admision" type="string" column="fecha_admision"/>
+	</class>
+</hibernate-mapping>
